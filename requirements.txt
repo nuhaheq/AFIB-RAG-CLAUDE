@@ -1,7 +1,10 @@
-streamlit
-langchain
-langchain-community
-langchain-core
-faiss-cpu
-sentence-transformers
-google-genai
+# Versi dikunci (pinned) untuk elak import error daripada perubahan
+# langchain terkini. Sempadan ni sama seperti yang sudah terbukti berfungsi
+# dalam pipeline Colab anda (langchain_community.embeddings/vectorstores).
+streamlit>=1.32,<2.0
+langchain<0.2.0
+langchain-community<0.2.0
+langchain-core<0.2.0
+faiss-cpu>=1.7.4,<2.0
+sentence-transformers>=2.2.2,<3.0
+google-genai>=0.3.0
